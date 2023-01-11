@@ -23,8 +23,8 @@ function getRandomHexColor() {
 }
 destroyBtn.addEventListener('click', destroyBoxes)
 function destroyBoxes(event) {
-  elBoxes.remove();
-
+  elBoxes.querySelectorAll("div").forEach(div => div.remove());
+  input.value = 0;
 }
 
 
