@@ -7,6 +7,6 @@ function handleSubmit(event) {
     if (email.value === '' || password.value === '') {
         return alert('Заповніть поля')
     }
-    console.log('email: ${email.value}, password: ${passwword.value}');
+    console.log({ email: email.value, password: password.value });
     event.currentTarget.reset();
 }
